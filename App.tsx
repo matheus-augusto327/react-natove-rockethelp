@@ -6,6 +6,7 @@ import {
 import { NativeBaseProvider } from "native-base";
 import { StatusBar } from "react-native";
 import { Loading } from "./src/components/Loading";
+import { Register } from "./src/screens/Register";
 import { SignIn } from "./src/screens/SignIn";
 import { THEME } from "./src/styles/theme";
 
@@ -20,7 +21,7 @@ export default function App() {
         translucent
       />
 
-      {fontsLoaded ? <SignIn /> : <Loading />}
+      {fontsLoaded ? <Register /> : <Loading />}
     </NativeBaseProvider>
   );
 }
